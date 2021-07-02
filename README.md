@@ -26,10 +26,10 @@
 
 ## Specs
 
-Describe: Number form input
+<!-- Describe: Number form input
 Test: "Form should take user input and make sure it is a number"
 Code: 
-Expected Output: 
+Expected Output:  -->
 
 Describe: createNumberArray()
 Test: "It should return an array from 0 to the user's inputted number" 

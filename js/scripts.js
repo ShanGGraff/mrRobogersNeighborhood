@@ -1,14 +1,26 @@
 //Utility Logic
+function createNumberArray(number) {
+  const numberInput = number;
+  let initialArray = [];
+  for (let i = 0; i <= numberInput; i++) {
+    initialArray.push(i);
+  }
+  return initialArray;
+}
 
 //Business Logic
+
   
 //UserInterface Logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     $('#mrRoboger').hide();
 
-    const mrRoboger= $("#mrRoboger").val();
-    console.log(mrRoboger);
+    
+  
+    const numberArray = createNumberArray($('#mrRoboger').val());
+    console.log(numberArray);
+  
 
     $('#mrRoboger').show(); 
     event.preventDefault();
