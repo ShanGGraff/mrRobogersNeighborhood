@@ -1,5 +1,5 @@
-//Utility Logic
-function createNumberArray(number) {
+//Business Logic
+function beepBoop(number) {
   const numberInput = number;
   let initialArray = [];
   for (let i = 0; i <= numberInput; i++) {
@@ -8,7 +8,10 @@ function createNumberArray(number) {
   return initialArray;
 }
 
-//Business Logic
+// //Business Logic
+// function beepBoop(initialArray) {
+// });
+
 
   
 //UserInterface Logic
@@ -18,7 +21,7 @@ $(document).ready(function() {
 
     
   
-    const numberArray = createNumberArray($('#mrRoboger').val());
+    const numberArray = beepBoop($('#mrRoboger').val());
     console.log(numberArray);
   
 
