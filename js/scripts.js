@@ -8,7 +8,6 @@ function createNumberArray(number) {
   return initialArray;
 }
     
-
 // Business Logic
 function beepBoop(initialArray) {
   let beMyNeighborArray = [];
@@ -26,21 +25,19 @@ function beepBoop(initialArray) {
   return beMyNeighborArray;
 }
 
-
 //UserInterface Logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
-    $('#mrRoboger').hide();
+    $('#beepBoopOutput').hide();
 
     const numberRange = createNumberArray($('#mrRoboger').val());
     console.log(numberRange);
     
+    // const stringSwap = beepBoop(numberRange);
     const stringSwap = beepBoop(numberRange);
     console.log(beepBoop(stringSwap));
     
-  
-
-    $('#mrRoboger').show(); 
+    $('#beepBoopOutput').append("<p>" + stringSwap + "</p>").show();
     event.preventDefault();
   });
-});
+}); 
