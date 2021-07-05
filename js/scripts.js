@@ -14,9 +14,9 @@ function beepBoop(initialArray) {
   let beMyNeighborArray = [];
   for (let i = 0; i < initialArray.length; i++) {
     if (initialArray[i].toString().includes("1")) {
-      beMyNeighborArray.push("Beep!")
-    } else {
-      beMyNeighborArray.push(initialArray[i]);
+      beMyNeighborArray.push("Beep!");
+    }  else {
+      beMyNeighborArray.push("Boop!");
     }
   return beMyNeighborArray;
   }

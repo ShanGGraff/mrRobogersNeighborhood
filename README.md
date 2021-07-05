@@ -1,35 +1,29 @@
-# Project Title
+# Mr. Roboger's Neighborhood
 
 #### Explain Project
 
-#### By 
+#### By Shane Graff
 
 ## Technologies Used
 
-* 
-* 
-* 
-* 
-* 
-* 
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
+* Vs Code
+* Looping
 
 ## Description
-
+This is a basic website that takes a number from a user and turns it into an array (ex: 9 would be turned into [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]). It then swaps out every occurence of the number 1 with the string "Beep!", every occurence of the number 2 with the string "Boop!", and finally changes any occurence of the number three with the string "Won't you be my neighbor?".
 
 
 ## Setup/Installation Requirements
 
-* Clone repository to directory of your choice or --
-* Fork website from 
+* Clone repository to directory of your choice (git clone https://github.com/ShanGGraff/mrRobogersNeighborhood) or
+* Fork website from https://github.com/ShanGGraff/mrRobogersNeighborhood
 
 ## Specs
-
-## Specs
-
-<!-- Describe: Number form input
-Test: "Form should take user input and make sure it is a number"
-Code: 
-Expected Output:  -->
 
 Describe: createNumberArray()
 Test1: "It should return an array with a 0 if the number 0 is inputted"
@@ -54,6 +48,7 @@ Expect(beepBoop(11)output: [0, "Beep!", Boop!", "Won't you be my neighber?", 4, 
 
 
 ## Known Bugs
+Currently testing for Boop! not working
 
 
 ## License
