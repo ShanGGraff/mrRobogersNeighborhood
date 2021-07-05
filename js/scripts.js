@@ -1,34 +1,35 @@
-//Business Logic
-function beepBoop(number) {
-  const numberInput = number.parseInt.val();
+// Utility Logic
+function createNumberArray(number) {
+  const numberInput = number;
   let initialArray = [];
   for (let i = 0; i <= numberInput; i++) {
-    if (numberInput = 1) {
-      initialArray.push("Beep!")
-    }
-    else {
-      initialArray.push(i);
-    }
-    
+    initialArray.push(i);
   }
   return initialArray;
 }
+    
 
-// //Business Logic
-// function beepBoop(initialArray) {
-// });
+// Business Logic
+function beepBoop(initialArray) {
+  let beMyNeighborArray = [];
+  for (let i = 0; i < initialArray.length; i++) {
+    if (initialArray[i].toString().includes("1")) {
+      beMyNeighborArray.push("Beep!")
+    } else {
+      beMyNeighborArray.push(initialArray[i]);
+    }
+  return beMyNeighborArray;
+  }
+}
 
-
-  
 //UserInterface Logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     $('#mrRoboger').hide();
 
-    
-  
-    const numberArray = beepBoop($('#mrRoboger').val());
-    console.log(numberArray);
+    const numberRange = createNumberArray($('#mrRoboger').val());
+    console.log(numberRange);
+    console.log(beepBoop(numberRange));
   
 
     $('#mrRoboger').show(); 
