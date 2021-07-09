@@ -28,16 +28,13 @@ function beepBoop(initialArray) {
 //UserInterface Logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
-    $('#beepBoopOutput').hide();
-
-    const numberRange = createNumberArray($('#mrRoboger').val());
-    console.log(numberRange);
+    event.preventDefault();
+      $("#beepBoopOutput").empty();
     
-    // const stringSwap = beepBoop(numberRange);
+    const numberRange = createNumberArray($('#mrRoboger').val());
     const stringSwap = beepBoop(numberRange);
-    console.log(beepBoop(stringSwap));
     
     $('#beepBoopOutput').append("<p>" + stringSwap + "</p>").show();
-    event.preventDefault();
+    
   });
 }); 
